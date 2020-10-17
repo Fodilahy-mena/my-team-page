@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import App from './team-compopnent/App'
+// import React from 'react'
+// import ReactDom from 'react-dom'
+// import App from './team-compopnent/App'
 
-ReactDom.render(<App/>, document.getElementById('team'));
+// ReactDom.render(<App/>, document.getElementById('team'));
