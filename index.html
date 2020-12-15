@@ -5,100 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My team page</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=PT Serif:400|Poppins:400');
-        body {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: PT Serif;
-            font-style: normal;
-        }
-
-        body > header {
-            background: #333333;
-            color: violet;
-        }
-
-        body > header > h1 {
-            font-size: 48px;
-            padding: 2rem;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-
-        body > header > h1, main > header, .images, footer {
-            max-width: 80%;
-            margin: auto;
-        }
-
-        article {
-            max-width: 439px;
-        }
-        img {
-        max-width: 100%;
-        min-width: 100%;
-        }
-        figure {
-            margin: 0;
-            position: relative;
-        }
-        figure:nth-of-type(2n) {
-            margin-top: 4rem;
-        }
-        figcaption { 
-            writing-mode: vertical-rl; 
-            text-orientation: mixed; 
-            left: 100%;
-            position: absolute;
-        } 
-        .images {
-            column-gap: 2rem;
-            row-gap: 2rem;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-        }
-        @media (min-width: 375px) {
-        figure:nth-of-type(2n) {
-            margin-top: unset;
-        }
-
-        figure:nth-of-type(2), figure:nth-of-type(5) {
-            margin-top: 4rem;
-        }
-
-        main > header {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        main > header > h1 {
-            float: left;
-        }
-        .images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-        main > header > article {
-            margin-inline-start: auto;
-        }
-        }
-
-        footer {
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            opacity: .5;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Responsive Images</h1>
-    </header>
-    
     <main>
         <header>
             <h1>
@@ -144,14 +53,5 @@
             </figure>
         </div>
     </main>
-    <div id="team">
-
-    </div>
-    <hr>
-    <footer>
-        <p>Jerome @ DevChallenges.io</p>
-        <small>&copy; Copyright 2020 Jerome, DevChallenges.io</small>
-    </footer>
-    <script src="./script.js"></script>
 </body>
 </html>

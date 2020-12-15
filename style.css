@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=PT Serif:400|Poppins:400');
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: PT Serif;
+            font-style: normal;
+        }
+
+        main {
+            margin-bottom: 109px;
+        }
+        main > header, .images {
+            max-width: 80%;
+            margin: auto;
+        }
+        main > header {
+            margin-top: 110px;
+        }
+
+        main > header h1 {
+            font-family: PT Serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.045em;
+
+            color: #000000;
+
+        }
+        article {
+            max-width: 439px;
+        }
+        img {
+        max-width: 100%;
+        min-width: 100%;
+        }
+        figure {
+            margin: 0;
+            position: relative;
+        }
+        figure:nth-of-type(2n) {
+            margin-top: 4rem;
+        }
+        figure > span {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+            color: #000000;
+
+        }
+        figcaption { 
+            font-family: PT Serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #000000;
+
+            writing-mode: vertical-rl; 
+            text-orientation: mixed; 
+            left: 100%;
+            position: absolute;
+        } 
+        .images {
+            column-gap: 4rem;
+            row-gap: 6rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 96px;
+            margin-bottom: 96px;
+        }
+        article > h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #000000;
+
+        }
+        
+        article > p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+
+            color: #000000;
+        }
+
+        @media (min-width: 779px) {
+        figure:nth-of-type(2n) {
+            margin-top: unset;
+        }
+
+        figure:nth-of-type(2), figure:nth-of-type(5) {
+            margin-top: 12rem;
+        }
+
+        main > header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        main > header > h1 {
+            float: left;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        main > header > article {
+            margin-inline-start: auto;
+        }
+        }
